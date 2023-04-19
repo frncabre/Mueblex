@@ -1,4 +1,11 @@
 /*-------------------------------------------------------------------------------------------------------------*/
+:root{
+    --color-main: #B3A487;
+    --color_secundario: #E0D0B3;
+    --color-terciario: #D8C092;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
 * {
     box-sizing: border-box;
 }
@@ -27,27 +34,23 @@ button{
     border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
-    background-color: #E0D0B3;
+    background-color: var(--color_secundario);
 }
 
 button:hover{
-    background-color: #D8C092;
+    background-color: var(--color-terciario);
 }
 .container{
     max-width: 1400px;
     margin: auto;
 }
 
-.color-acento{ color:#D8C092; }
+.color-acento{ color:var(--color-terciario); }
 /*-------------------------------------------------------------------------------------------------------------*/
-header {
-    display: flex;
-    justify-content: space-between;
-    min-height: 70px;
-    background: rgb(245, 245, 245);
-    align-items: center;
-    flex-direction: column;
+nav {
+    background-color: var(--color_secundario);
 }
+
 .logotipo {
     display: flex;
     align-items: center;
@@ -56,9 +59,12 @@ header {
     height: 50px;
     margin-right: 10px;
 }
+/*
+
+
 .logotipo p {
     font-weight: 600;
-    color: #D8C092;
+    color: var(--color-terciario);
 }
 nav a {
     text-decoration: none;
@@ -67,8 +73,8 @@ nav a {
     font-weight: 600;
 }
 nav a:hover {
-    color: #D8C092;
-}
+    color: var(--color-terciario);
+}*/
 /*-------------------------------------------------------------------------------------------------------------*/
 #somos .container{
     display: flex;
@@ -100,7 +106,7 @@ nav a:hover {
 }
 /*-------------------------------------------------------------------------------------------------------------*/
 #nuestros-productos{
-    background-color: #B3A487;
+    background-color: var(--color-main);
     color: white;
     text-align: center;
 }
@@ -212,7 +218,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #B3A487;
+    background-color: var(--color-main);
     color: white;
     min-height: 120vh;
 }
@@ -249,7 +255,7 @@ input, textarea {
     text-align: center;
 }
 .boton-form {
-    background: #E0D0B3;
+    background: var(--color_secundario);
     border-radius: 5px;
     border-radius: 5px solid #958464;
     padding: 10px;
@@ -288,7 +294,7 @@ input, textarea {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: #B3A487;
+    background-color: var(--color-main);
     padding-bottom: 75px;
 }
 .comentarios-header {
@@ -426,3 +432,6 @@ nav {
         width: 100%;
     }
 }
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
