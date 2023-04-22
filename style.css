@@ -163,7 +163,8 @@ nav a:hover {
 
 @media (max-width: 768px) {
     #nuestros-prodcutos h2{
-        padding-bottom: 25%;
+        margin-top: 0;
+        padding-top: 0;
     }
     .carta {
         width: 50%;
@@ -322,9 +323,14 @@ input, textarea {
     color: white;
 }
 
-#banner button{
-    font-size: 1.75em;
+@media (max-width: 768px) {
+
+    #banner h1{
+        font-size: 2.8rem;
+    }
 }
+
+
 /*-------------------------------------------------------------------------------------------------------------*/
 
 #comentarios {
