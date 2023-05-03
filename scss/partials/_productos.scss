@@ -1,0 +1,155 @@
+@import "../var/var";
+
+#nuestros-productos{
+    background-color: $color-main;
+    color: white;
+    text-align: center;
+}
+
+#nuestros-productos{
+    .container{
+        padding: 150px 12px;
+    }
+}
+
+#nuestros-productos{
+    h2{
+        padding-bottom: 5%;
+        font-size: 3.2em;
+    }
+}
+
+
+#nuestros-productos{
+    .carta{
+        background-position: center center;
+        background-position-y: 0;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-color: rgba(50, 50, 50, 1);
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+}
+
+
+.texto {
+    padding-top: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.carta {
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+    #nuestros-prodcutos{
+        h2{
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+    .carta {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carta {
+        width: 100%;
+    }
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    )
+    ,url("../../media/Esquinero-NY-3c.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../../media/mueble-tv.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../../media/mesa-luz.jpg");
+
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../../media/esquinero.jpg");
+}
+
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../../media/img1.jpg");
+}
+
+.carta:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../../media/living.jpg");
+}
+
+nav {
+    padding: 10px 0px;
+}
+
+
+#nuestros-productos{
+    .productos{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#nuestros-productos {
+    p{
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .carta {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carta {
+        width: 100%;
+    }
+}

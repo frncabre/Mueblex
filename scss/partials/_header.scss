@@ -1,0 +1,16 @@
+@import "../var/var";
+
+nav {
+    background-color: $color-secundario;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+}
+.logotipo{
+    img {
+        height: 50px;
+        margin-right: 10px;
+    }
+}

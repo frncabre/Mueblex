@@ -1,0 +1,60 @@
+@import "../var/var";
+
+#somos{
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 200px 12px;
+    }
+}
+
+#somos{
+    .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+#somos{
+    h2{
+        margin-top: 0px;
+    }
+}
+
+#somos{
+    .img{
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+}
+
+@media (max-width: 768px){
+    #somos{
+        .container{
+            flex-direction: column-reverse;
+        }
+    }
+
+    #somos{
+        .img{
+            background-size: cover;
+            background-position: center center;
+            height: 300px;
+            width: 365px;
+        }
+    }
+
+    #somos{
+        .texto{
+            width: 100%;
+        }
+    }
+}

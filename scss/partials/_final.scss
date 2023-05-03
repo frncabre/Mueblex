@@ -1,0 +1,76 @@
+@import "../var/_var.scss";
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-main);
+    color: white;
+    min-height: 120vh;
+}
+
+#final{
+    h2{
+        font-size: 4rem;
+        padding-bottom: 10%;
+    }
+}
+
+#final{
+    button{
+        font-size: 5vw;
+    }
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;
+    background: #CDB68B;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-family: Calibri;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+input, textarea {
+    border: 0;
+    width: 480px;
+    border-radius: 5px;
+}
+.celda {
+    border: solid 2px #958464;
+    padding: 10px;
+}
+.centrar {
+    text-align: center;
+}
+.boton-form {
+    background: $color_secundario;
+    border-radius: 5px;
+    border-radius: 5px solid #958464;
+    padding: 12px;
+}
+
+.boton-form{
+    :hover{
+        background: #958464
+    }
+}
+
+@media (max-width: 768px) {
+    #final{
+        h2{
+            font-size: 3rem;
+            padding-bottom: 20%;
+        }   
+    }
+    form{
+        width: 80%;
+    }
+    input, textarea {
+        width: 70%;
+    }
+}
