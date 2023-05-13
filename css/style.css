@@ -49,7 +49,7 @@ button {
   background-color: #E0D0B3;
 }
 
-button :hover {
+button:hover {
   background-color: #D8C092;
 }
 
@@ -228,7 +228,7 @@ padding: 150px 12px
     justify-content: center;
     flex-wrap: wrap;
 }*/
-.productos :hover {
+.productos:hover {
   transform: scale(1.05, 1.05);
 }
 
@@ -242,7 +242,7 @@ padding: 150px 12px
   padding: 150px 12px;
 }
 
-#nuestros-productos h2 {
+#nuestros-productos h1 {
   padding-bottom: 5%;
   font-size: 3.2em;
 }
@@ -259,18 +259,31 @@ padding: 150px 12px
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+.carta {
+  width: 25%;
+  margin: 30px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* asegura que la imagen no se desborde */
+}
+
 .texto {
   padding-top: 25%;
   padding-left: 5%;
   padding-right: 5%;
+  text-align: left;
 }
 
-.carta {
-  width: 25%;
+.carta img {
+  width: 100%;
+  height: 250px;
+  display: block; /* asegura que la imagen no tenga espacio extra debajo */
+  border-radius: 10px;
+  padding: 5px;
 }
 
 @media (max-width: 768px) {
-  #nuestros-prodcutos h2 {
+  #nuestros-prodcutos h1 {
     margin-top: 0;
     padding-top: 0;
   }
@@ -283,30 +296,6 @@ padding: 150px 12px
     width: 100%;
   }
 }
-.carta:first-child {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../media/Esquinero-NY-3c.jpg");
-}
-
-.carta:nth-child(2) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../media/mueble-tv.jpg");
-}
-
-.carta:nth-child(3) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../media/mesa-luz.jpg");
-}
-
-.carta:nth-child(4) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../media/esquinero.jpg");
-}
-
-.carta:nth-child(5) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../media/img1.jpg");
-}
-
-.carta:nth-child(6) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../media/living.jpg");
-}
-
 nav {
   padding: 10px 0px;
 }
@@ -342,12 +331,12 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--color-main);
+  background-color: #B3A487;
   color: white;
   min-height: 120vh;
 }
 
-#final h2 {
+#final h1 {
   font-size: 4rem;
   padding-bottom: 10%;
 }
@@ -390,12 +379,12 @@ input, textarea {
   padding: 12px;
 }
 
-.boton-form :hover {
+.boton-form:hover {
   background: #958464;
 }
 
 @media (max-width: 768px) {
-  #final h2 {
+  #final h1 {
     font-size: 3rem;
     padding-bottom: 20%;
   }
@@ -425,7 +414,7 @@ input, textarea {
   align-items: center;
 }
 
-.comentarios-header h2 {
+.comentarios-header h1 {
   margin-top: 0;
   font-size: 3.2em;
   padding: 10px 20px;
@@ -506,12 +495,20 @@ input, textarea {
   color: rgb(90, 90, 90);
 }
 
+@media (max-width: 768px) {
+  .comentarios-header h1 {
+    margin-top: 0;
+    font-size: 2.7em;
+    padding-left: 20%;
+    color: white;
+  }
+}
 footer {
   background-color: rgb(230, 230, 230);
 }
 
 footer p {
-  padding-right: 35%;
+  margin-left: 100px;
   padding-bottom: 5px;
   font-size: 0.8rem;
   margin: 0;

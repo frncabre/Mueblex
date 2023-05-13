@@ -34,7 +34,7 @@ button{
 }
 
 button{
-    :hover{
+    &:hover{
         background-color: $color-terciario;
     }
 }
