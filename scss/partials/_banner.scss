@@ -1,14 +1,11 @@
 @import "../var/_var.scss";
 
-// Define el mixin
 @mixin gradient($start-color, $end-color) {
     background-image: radial-gradient(circle, $start-color , $end-color);
 }
 
-// Usa el mixin para generar un gradiente de fondo en el #banner
 #banner {
     @include gradient(rgba(246,224,180,1) 16%, rgba(82,64,19,1) 100% );
-    /* El resto del código del banner se mantiene igual */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,46 +15,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-h1 {
-    color: white;
-}
-@media (max-width: 768px) {
     h1 {
-        font-size: 2.8rem;
-    }
-}
-}
-  
-
-/*
-#banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5), esto sombrea la imagen de fondo para que no opaque al texto :D
-        rgba(0,0,0,0.5)
-    )
-    ,url("../../media/img1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#banner{
-    h1{
-        color: white;
+        color: #3D3D3D;
     }
 }
 
 @media (max-width: 768px) {
     #banner{
-        h1{
+        h1 {
             font-size: 2.8rem;
         }
     }
-}*/
+}
+
